@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "flake8-no-chained-assignments"
-version = "0.1.0"
+version = "0.1.1"
 description = "Flake8 plugin to prohibit chained assignments (e.g., a = b = c)"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -20,8 +20,8 @@ classifiers = [
 dev = ["flake8", "pytest"]
 
 [project.urls]
-Homepage = "https://github.com/mrsndmn/flake8-no-model-forward-call"
-Repository = "https://github.com/mrsndmn/flake8-no-model-forward-call"
+Homepage = "https://github.com/mrsndmn/flake8-no-module-forward-call"
+Repository = "https://github.com/mrsndmn/flake8-no-module-forward-call"
 
 [project.entry-points."flake8.extension"]
 NCA001 = "flake8_no_chained_assignments.plugin:NoChainedAssignmentsChecker"
