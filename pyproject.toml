@@ -13,7 +13,6 @@ authors = [{ name = "Author", email = "author@example.com" }]
 classifiers = [
   "Framework :: Flake8",
   "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: Apache Software License",
   "Topic :: Software Development :: Quality Assurance",
 ]
 
@@ -26,6 +25,9 @@ Repository = "https://github.com/mrsndmn/flake8-no-model-forward-call"
 
 [project.entry-points."flake8.extension"]
 NCA001 = "flake8_no_chained_assignments.plugin:NoChainedAssignmentsChecker"
+
+[tool.flake8]
+max-line-length = 128
 
 [tool.setuptools]
 package-dir = {"" = "src"}
